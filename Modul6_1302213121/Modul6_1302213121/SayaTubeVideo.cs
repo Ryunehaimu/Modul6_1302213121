@@ -15,6 +15,7 @@ namespace Modul6_1302213121
         //method
         public SayaTubeVideo(string title)
         {
+            Debug.Assert(title.Length <= 200 & title != null,"Judul Video lebih dari 200");
             this.title = title;
             Random random = new Random();
             id = random.Next(10000,99999);
@@ -22,6 +23,7 @@ namespace Modul6_1302213121
         }
 
         public void increasePlayCount(int playCount) {
+            Debug.Assert(playCount <= 25000000 && playCount >= 0,"PlayCount Melebihi jumlah maksimal");
             this.playCount+= playCount;
         }
 

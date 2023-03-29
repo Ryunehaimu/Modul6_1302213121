@@ -65,14 +65,4 @@ user.AddVideo(video10);
 Console.WriteLine("Menambahkan FILM :");
 video10.PrintVideoDetails();
 
-
-
-
-
-
-
-
-
-
 user.PrintAllVideoPlaycount();
-
